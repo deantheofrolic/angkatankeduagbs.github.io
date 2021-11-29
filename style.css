@@ -1,198 +1,198 @@
 /* CSS Style */
 html {
-    position: relative;
-    scroll-behavior: smooth;
+  position: relative;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-size: 16px
+  font-size: 16px;
+  overflow-x: hidden;
 }
 
 .navbar {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .navbar-brand {
-    font-family: "Poppins", sans-serif;
-    font-size: 2em;
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
 }
 
 .navbar-nav {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .jumbotron {
-    height: 540px;
-    background-image: url(img/gitabangsa.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
+  height: 540px;
+  background-image: url(img/gitabangsa.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .jumbotron::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.85), rgba(4, 9, 30, 0.85));
-    position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.85), rgba(4, 9, 30, 0.85));
+  position: absolute;
 }
 
 .info-title,
 .info-paragraph,
 .info-button {
-    color: #fff;
-    text-align: center;
-    position: relative;
-    z-index: 1;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .info-title {
-    font-size: 2.8em;
-    text-align: center;
-    margin-top: -380px;
+  font-size: 2.8em;
+  text-align: center;
+  margin-top: -380px;
 }
 
 .info-paragraph {
-    margin-top: 5px;
-    margin-bottom: 20px;
-    font-size: 1.25em;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 1.25em;
 }
 
 .info-button {
-    display: inline-block;
-    text-decoration: none;
-    border: 1px solid #fff;
-    padding: 12px 34px;
-    background: transparent;
-    cursor: pointer;
-    margin-bottom: 230px;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  background: transparent;
+  cursor: pointer;
+  margin-bottom: 230px;
 }
 
 .info-button:hover,
 .info-button:active {
-    color: #fff;
+  color: #fff;
 }
 
 .center {
-    position: relative;
-    left: 33.33%;
+  position: relative;
+  left: 33.33%;
 }
 
 section h2 {
-    font-size: 1.7em;
-    text-align: center;
-    margin-bottom: 13px;
+  font-size: 1.7em;
+  text-align: center;
+  margin-bottom: 13px;
 }
 
 .section p {
-    text-align: justify;
+  text-align: justify;
 }
 
 .card {
-    width: 280px;
-    height: 280px;
-    text-align: center;
-    margin-bottom: 80px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 280px;
+  height: 280px;
+  text-align: center;
+  margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card img {
-    width: 280px;
-    height: 280px;
+  width: 280px;
+  height: 280px;
 }
 
 .last-card {
-    margin-bottom: 200px;
+  margin-bottom: 200px;
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background-color: #333;
-    padding-top: 30px;
-    margin-top: 120px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #333;
+  padding-top: 30px;
+  margin-top: 120px;
 }
 
 footer p {
-    color: #aaa;
-    font-family: arial, sans-serif;
-    margin-top: -10px;
-    margin-bottom: 20px;
+  color: #aaa;
+  font-family: arial, sans-serif;
+  margin-top: -10px;
+  margin-bottom: 20px;
 }
 
 footer a {
-    margin-top: -10px;
+  margin-top: -10px;
 }
 
 /* Desktop */
 @media (min-width: 992px) {
+  .navbar-brand {
+    margin-left: 50px;
+  }
 
-    .navbar-brand {
-        margin-left: 50px;
-    }
+  .nav-link {
+    text-transform: uppercase;
+    margin-right: 30px;
+  }
 
-    .nav-link {
-        text-transform: uppercase;
-        margin-right: 30px;
-    }
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    width: 50%;
+    margin: auto;
+    margin-bottom: -8px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #f44336;
+    cursor: pointer;
+  }
 
-    .nav-link:hover::after {
-        content: "";
-        display: block;
-        width: 50%;
-        margin: auto;
-        margin-bottom: -8px;
-        padding-bottom: 5px;
-        border-bottom: 3px solid #f44336;
-        cursor: pointer;
-    }
+  .navbar-brand,
+  .nav-link {
+    color: #fff !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
 
-    .navbar-brand,
-    .nav-link {
-        color: #fff !important;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    }
+  .jumbotron {
+    height: 725px;
+    margin-top: -75px;
+  }
 
-    .jumbotron {
-        height: 725px;
-        margin-top: -75px;
-    }
+  .info-title {
+    font-size: 4em;
+    margin-top: -450px;
+  }
 
-    .info-title {
-        font-size: 4em;
-        margin-top: -450px;
-    }
+  .info-paragraph {
+    font-size: 1.5em;
+  }
 
-    .info-paragraph {
-        font-size: 1.5em;
-    }
+  .info-button {
+    font-size: 1.5em;
+    margin-bottom: 250px;
+  }
 
-    .info-button {
-        font-size: 1.5em;
-        margin-bottom: 250px;
-    }
+  .info-button:hover {
+    color: #fff;
+    border: 1px solid #f44336;
+    background: #f44336;
+    cursor: pointer;
+  }
 
-    .info-button:hover {
-        color: #fff;
-        border: 1px solid #f44336;
-        background: #f44336;
-        cursor: pointer;
-    }
+  .center {
+    left: 43.33%;
+  }
 
-    .center {
-        left: 43.33%;
-    }
+  section h2 {
+    margin-top: 35px;
+  }
 
-    section h2 {
-        margin-top: 35px;
-    }
-
-    section p {
-        text-align: justify;
-    }
+  section p {
+    text-align: justify;
+  }
 }
